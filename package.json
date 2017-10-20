@@ -1,0 +1,35 @@
+{
+  "name": "mongo-scraper",
+  "version": "1.0.0",
+  "description": "A mongoDB news scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CadenMay0/mongo-scraper.git"
+  },
+  "keywords": [
+    "Mongodb",
+    "cheerio",
+    "express",
+    "mongoose"
+  ],
+  "author": "Caden Mayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CadenMay0/mongo-scraper/issues"
+  },
+  "homepage": "https://github.com/CadenMay0/mongo-scraper#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.12.1",
+    "morgan": "^1.9.0",
+    "request": "^2.83.0"
+  }
+}

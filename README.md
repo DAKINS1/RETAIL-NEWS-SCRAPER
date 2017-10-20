@@ -1,1 +1,2 @@
-# RETAIL-NEWS-SCRAPER
+# mongo-scraper
+A mongodb based news article scraper
