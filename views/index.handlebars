@@ -1,32 +1,33 @@
 <div class="container">
 <div class="header clearfix">
 <nav>
-<div class="nav nav-pills float-right">
+<div class="nav float-right">
     <div class="nav-item">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" id="topRight" href="/">Home</a>
     </div>
 </div>
 </nav>
-<h3 class="text-muted">Mongo WebScraping</h3>
+<h3 id="topHeader" class="text-muted">Retail News WebScraper</h3>
 </div>
 
 
     <div class="jumbotron">
         <h1 class="jumboheader">Retail News</h1>
-        <p class="lead">Stay up to date on the retail industry.</p>
-        <p><a class="btn btn-lg btn-success" href="/scrape" role="button">Fetch the latest news!</a></p>
+        <h2 class="lead">Stay up to date on the retail industry.</h2>
+        <p><a class="btn btn-lg btn-primary" href="/scrape" role="button">Fetch the latest news!</a></p>
     </div>
 
-    {{!--News Cards--}} {{!--Iterate through the results and populate the handlebars injection points with the scraped titles,
-    links.--}} {{#each result}}
-    <div class="card news-section">
+
+
+    {{!--News--}}
+    {{#each result}}
+
+
+    <div class="card">
         <a href="https://www.cnbc.com{{this.link}}" target="_blank">
-            <h4 class="card-header">{{this.title}}</h4>
+            <h5 class="card-header">{{this.title}}</h5>
         </a>
         <div class="card-block">
-            {{!--
-            <h4 class="card-title"></h4>
-            </a>--}}
             <a href="{{this.link}}">
             </a>
             <br>
@@ -35,7 +36,6 @@
     </div>
     <br>
     <br> {{/each}}
-
 
 
     <footer class="footer">
