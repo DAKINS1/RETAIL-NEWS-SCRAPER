@@ -16,13 +16,16 @@ module.exports = function (app) {
 app.get("/scrape", function(req, res) {
 
     request("https://www.cnbc.com/retail/", function(error, response, html) {
+
     var $ = cheerio.load(html);
+
     $(".headline").each(function(i, element) {
 
       var result = {};
 
       result.title = $(this).children("a").text();
       result.link = $(this).children("a").attr("href");
+      result.snippet = $(this).siblings().siblings().siblings("p.desc").text();
 
       var entry = new Article(result);
 
@@ -33,10 +36,12 @@ app.get("/scrape", function(req, res) {
         else {
           console.log(doc);
         }
-      });
+      }); //entry.save closure
+    }); //$headline closure
 
-    });
-  });
+  }); //request closure
+
+
     // Tell the browser that we finished scraping the text
     res.redirect("/");
   });

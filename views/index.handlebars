@@ -7,13 +7,13 @@
     </div>
 </div>
 </nav>
-<h3 id="topHeader" class="text-muted">Retail News WebScraper</h3>
+<img src="img/logo.jpg" alt="logo">
 </div>
 
 
     <div class="jumbotron">
-        <h1 class="jumboheader">Retail News</h1>
-        <h2 class="lead">Stay up to date on the retail industry.</h2>
+        <h1 class="jumboheader">Retail Coverage & Top Headlines</h1>
+        <h2 class="lead">Keep up to date on the retail industry.</h2>
         <p><a class="btn btn-lg btn-primary" href="/scrape" role="button">Fetch the latest news!</a></p>
     </div>
 
@@ -29,6 +29,7 @@
         </a>
         <div class="card-block">
             <a href="{{this.link}}">
+            <p class="card-text">{{this.snippet}}</p>
             </a>
             <br>
             <a href="/articles/{{this._id}}" class="btn btn-primary">Comment</a>

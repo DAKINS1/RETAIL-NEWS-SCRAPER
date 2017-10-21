@@ -1,14 +1,15 @@
-﻿/*/* Space out content a bit */
-
-html {
+﻿html {
   position: relative;
   min-height: 100%;
+
 }
 
 body {
   padding-top: 1.5 rem;
   padding-bottom: 1.5 rem;
+  background-color: #d3d3d3;
 }
+
 
 #topHeader,
 #topRight {
@@ -24,9 +25,10 @@ body {
 
 div.jumbotron {
   background-image: url("/img/retail.png");
-  background-repeat: no-repeat;
+  width: 100%;
 }
 
+p,
 h5.card-header {
  color: black;
 }

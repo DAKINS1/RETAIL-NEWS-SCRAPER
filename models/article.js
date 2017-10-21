@@ -12,7 +12,11 @@ var ArticleSchema = new Schema({
     required: true,
     unique: true
   },
-
+  snippet: {
+    type: String,
+    required: false,
+    unique: true
+  },
   comment: [{
     type: Schema.Types.ObjectId,
     ref: "Comment"
