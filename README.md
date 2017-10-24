@@ -1,4 +1,4 @@
-https://s1.postimg.org/63ub5zyqvj/Screen_Shot_2017-10-24_at_6.53.25_AM.png
+![Alt text](https://s1.postimg.org/63ub5zyqvj/Screen_Shot_2017-10-24_at_6.53.25_AM.png)
 
 # mongo-scraper
 A mongodb based news article scraper
